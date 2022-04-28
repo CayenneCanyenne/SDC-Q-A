@@ -31,6 +31,9 @@ app.put('/qa/answers/:question_id/helpful', markQuesHelpful);
 app.put('/qa/answers/:question_id/report', reportQues);
 app.put('/qa/answers/:answer_id/helpful', markAnsHelpful);
 app.put('/qa/answers/:answer_id/report', reportAns);
+app.get(‘/loaderio-29c377388c8535fe5daa0fa92f4a642a’, (req, res) => {
+    res.sendFile(‘/home/ubuntu/SDC-Q-A/loaderio-29c377388c8535fe5daa0fa92f4a642a.txt’);
+  });
 
 // start server
 const port = process.env.PORT || 3000;
